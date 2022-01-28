@@ -29,8 +29,8 @@
 }
 
 .header-title {
-  font-family: Roboto;
   font-size: 40px;
+  letter-spacing: 0.8px;
   text-align: center;
   color: white;
   background: transparent;
@@ -41,7 +41,7 @@
 .header-subtitle {
   font-family: Roboto, sans-serif;
   padding-right: 15px;
-  letter-spacing: 1px;
+  letter-spacing: 1.25px;
   font-size: 20px;
   text-align: center;
   color: white;
@@ -54,6 +54,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 64px;
+  margin-bottom: 80px;
   color: #fff;
 }
 
