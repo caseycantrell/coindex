@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 function App() {
 
   const [ coins, setCoins ] = useState([]);
+  const [ search, setSearch ] = useState("");
 
   useEffect(() => {
     axios
@@ -15,6 +16,10 @@ function App() {
     }).catch(error => console.log(error));
   }, []);
 
+  const handleChange = (event) => {
+    setSearch(event.target.value);
+  };
+
   return (
     <div className="App">
       <header className="header">
@@ -22,7 +27,11 @@ function App() {
       </header>
       <div className="coin-search">
         <h1 className="coin-text">Search a cryptocurrency</h1>
+        <form>
+          <input type="text" placeholder="Search..." className="coin-input" onChange={handleChange}/>
+        </form>
       </div>
+
     </div>
   );
 }
