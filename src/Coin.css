@@ -47,15 +47,15 @@
 }
 
 .coin-marketcap {
-    width: 155px;
+    width: 240px;
 }
 
 .coin-volume {
-    width: 230px;
+    width: 200px;
 }
 
 .coin-percent {
-    width: 100%;
+    width: 80px;
 }
 
 .red {

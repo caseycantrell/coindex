@@ -2,6 +2,7 @@ import "./App.css"
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Coin from "./Coin";
+import Header from "./Header"
 
 
 function App() {
@@ -26,10 +27,9 @@ function App() {
     )
 
   return (
+    <>
+    <Header />
     <div className="App">
-      <header className="header">
-        <p>Hellloooo</p>
-      </header>
       <div className="coin-search">
         <h1 className="coin-text">Search a cryptocurrency</h1>
         <form>
@@ -50,6 +50,7 @@ function App() {
         )
       })}
     </div>
+    </>
   );
 }
 
